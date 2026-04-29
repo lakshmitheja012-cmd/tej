@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Modern portfolio website for a Data Science student focusing on AI, Machine Learning, and Data Analytics projects."
+    />
+    <meta
+      name="keywords"
+      content="Data Science, Data Analyst, Portfolio, Machine Learning, Python, SQL, Analytics"
+    />
+    <meta name="author" content="Thejalakshmi" />
+    <title>Data Science Student Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a href="#top" class="logo">DS<span>Portfolio</span></a>
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#visualization">Visuals</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container section">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Hello, I'm Thejalaksmi</p>
+          <h1>Data Science Student / Aspiring Data Analyst</h1>
+          <p class="tagline">
+            Building impactful solutions with AI, machine learning, and data analytics to turn raw data into smart decisions.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact</a>
+          </div>
+        </div>
+        <div class="hero-card reveal">
+          <h2>Current Focus</h2>
+          <ul>
+            <li>Predictive Modeling</li>
+            <li>Business Intelligence Dashboards</li>
+            <li>End-to-End Data Storytelling</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="about" class="container section reveal">
+        <h2>About Me</h2>
+        <p>
+          I am a data science student passionate about solving business and social problems through data. I enjoy working across the full analytics workflow: data cleaning, exploratory analysis, modeling, and dashboarding.
+        </p>
+        <p>
+          My goal is to become a data professional who can bridge technical depth with business impact by creating actionable insights and clear visual communication.
+        </p>
+      </section>
+
+      <section id="skills" class="container section">
+        <h2 class="reveal">Skills</h2>
+        <div class="skills-grid">
+          <article class="card reveal">
+            <h3>Programming</h3>
+            <p>🐍 Python</p>
+            <p>🗄️ SQL</p>
+          </article>
+          <article class="card reveal">
+            <h3>Libraries</h3>
+            <p>Pandas</p>
+            <p>NumPy</p>
+            <p>Matplotlib</p>
+            <p>Scikit-learn</p>
+          </article>
+          <article class="card reveal">
+            <h3>Tools</h3>
+            <p>Power BI</p>
+            <p>Excel</p>
+            <p>Git</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="container section">
+        <h2 class="reveal">Projects</h2>
+        <div class="projects-grid">
+          <article class="card project reveal">
+            <h3>Sales Data Analysis Dashboard</h3>
+            <p>Interactive dashboard to track KPIs, identify trends, and segment customers by value.</p>
+            <p class="tech">Tech: Python, SQL, Power BI</p>
+            <div class="project-links">
+              <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+              <a href="#" aria-disabled="true">Live Demo</a>
+            </div>
+          </article>
+          <article class="card project reveal">
+            <h3>Machine Learning Prediction Model</h3>
+            <p>Supervised learning model to forecast customer churn with feature engineering and model comparison.</p>
+            <p class="tech">Tech: Python, Scikit-learn, Pandas</p>
+            <div class="project-links">
+              <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+              <a href="#" aria-disabled="true">Live Demo</a>
+            </div>
+          </article>
+          <article class="card project reveal">
+            <h3>Data Visualization Storyboard</h3>
+            <p>A visual storytelling project exploring economic and consumer patterns through custom charts.</p>
+            <p class="tech">Tech: Python, Matplotlib, Seaborn</p>
+            <div class="project-links">
+              <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
+          <article class="card project reveal">
+            <h3>SQL Business Insight Engine</h3>
+            <p>Set of optimized SQL queries and reports to uncover product performance and revenue drivers.</p>
+            <p class="tech">Tech: SQL, Excel</p>
+            <div class="project-links">
+              <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="visualization" class="container section">
+        <h2 class="reveal">Data Visualizations</h2>
+        <div class="charts-grid">
+          <div class="card reveal"><canvas id="barChart" aria-label="Bar chart" role="img"></canvas></div>
+          <div class="card reveal"><canvas id="lineChart" aria-label="Line chart" role="img"></canvas></div>
+          <div class="card reveal"><canvas id="pieChart" aria-label="Pie chart" role="img"></canvas></div>
+        </div>
+      </section>
+
+      <section id="experience" class="container section reveal">
+        <h2>Experience & Education</h2>
+        <div class="timeline card">
+          <p><strong>Degree:</strong> BCA (Data Science Track)</p>
+          <p><strong>Focus:</strong> Machine Learning, Statistics</p>
+          <p><strong>Certifications:</strong>(In Progress)</p>
+        </div>
+      </section>
+
+      <section id="contact" class="container section">
+        <h2 class="reveal">Contact</h2>
+        <form id="contactForm" class="card reveal" novalidate>
+          <label for="name">Theja lakshmi</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">lakshmitheja012@gmail.com</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p id="formMessage" aria-live="polite"></p>
+        </form>
+        <div class="social-links reveal">
+          <a href="https://github.com/" target="https://github.com/laksmitheja012-cmd" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com/" target="https://www.linkedin.com/in/theja-lakshmi" rel="noopener">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container footer">
+      <p>© 2026 Data Science Portfolio. Designed for recruiter-ready impact.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
